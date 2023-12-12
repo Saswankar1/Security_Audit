@@ -51,3 +51,11 @@ The audit report, released at the conclusion of the audit process, categorizes i
 Several audit services, such as CertiK, are well-known for their expertise in smart contract auditing. These services provide detailed audits, safety scores, and leaderboards showcasing audited projects.
 
 In summary, a smart contract audit is a meticulous process that ensures the security, efficiency, and reliability of blockchain projects, making it an essential step for projects seeking credibility in the DeFi space.
+
+
+
+Links:
+  1) https://academy.binance.com/en/articles/what-is-a-smart-contract-security-audit
+  2) https://hedera.com/learning/smart-contracts/smart-contract-audit#:~:text=A%20smart%20contract%20audit%20involves,and%20reliability%20of%20blockchain%20applications.
+  3) https://slowmist.medium.com/intro-to-smart-contract-security-audit-dos-e23e9e901e26
+  4) https://youtu.be/TmZ8gH-toX0?si=M5G3fM_yU2K714uG
