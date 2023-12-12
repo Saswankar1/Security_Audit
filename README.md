@@ -11,7 +11,7 @@ _Created By: Saswankar_
 ## Introduction
 
    1) RoadMap: https://youtu.be/rpnFJMYb_Cc?si=HrckUldZa8JliLZu
-   2) [### What is Smart Contract Auditing?](smart_contract_auditing.md)
+   2) What is Smart Contract Auditing?](smart_contract_auditing.md)
 
      
 
