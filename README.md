@@ -12,7 +12,7 @@ _Created By: Saswankar_
 
    1) RoadMap: https://youtu.be/rpnFJMYb_Cc?si=HrckUldZa8JliLZu
    2) [What is Smart Contract Auditing?](smart_contract_auditing.md)
-   3) [Tools for Security Audits](https://github.com/Saswankar1/Security_Audit/blob/main/tools_for_audit)
+   3) [Tools for Security Audits](tools_for_audit.md)
 
      
 
