@@ -1,3 +1,3 @@
 # Security_Audit
-           ** - Saswankar**
+           - Saswankar
 _Note: It contains all resources and code related to security auditing_
