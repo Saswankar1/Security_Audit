@@ -76,5 +76,3 @@ contract Test is Stdinvariant {
 - New token minted should be less than the inflation rate.
 - Only possible to have one winner.
 - Only withdraw what they deposit.
-```
-
