@@ -1,61 +1,80 @@
-Fuzz testing: Supplying random data to your system in an attempt to break it
+Certainly! Here's the content formatted for a README file:
 
-Invariant: property of a code that is always same or doesnt change. Ex: alwaysZero
+```markdown
+# Fuzz Testing and Invariants
 
-Examples:
-    ```solidity
-        contract MyContract {
-            uint public alwaysZero = 0;
-            uint private hiddenValue = 0;
-            function doStuff() {
-                if(data == 2){
-                    alwaysZero = 1;
-                }
-                if(hiddenValue == 7){
-                    alwaysZero = 1;
-                }
-                hiddenValue = data;
-                return alwaysZero;
-            }
+## Fuzz Testing
+**Fuzz Testing:** Supplying random data to your system in an attempt to break it.
 
+**Invariant:** A property of code that is always the same or doesn't change. Example: `alwaysZero`
+
+## Examples
+```solidity
+contract MyContract {
+    uint public alwaysZero = 0;
+    uint private hiddenValue = 0;
+
+    function doStuff() {
+        if(data == 2){
+            alwaysZero = 1;
         }
-
-    ```solidity
-    // test function
-        function testIsAlwaysZerofuzz(uint data) {
-            assert(exampleContract.doStuff() == 0);
+        if(hiddenValue == 7){
+            alwaysZero = 1;
         }
-
-    ```solidity
-    // run test: forge test -m testIsAlwaysZerofuzz
-    // it will gave error at data = 2
-
-We can change the number of run a fuzz function do by adding the below code in foundry.toml
-    // [fuzz]
-       runs = 1000
-
-Above test in stateless fuzz run i.e. where the state of the previous test is discarded for every run
-
-
-Stateful Fuzzing: Fuzzing where the final state of our previous run is the final state of your previous run is the starting state of your next run
-
- Ex:
-    import {Stdinvariant} from "forge-std/Stdinvariant.sol"
-    contract test is Stdinvariant, Test{
-        exampleContract = new MyContract();
-        targetContract(address(exampleContract));
-
-        function invariant_tesAlwaysReturnsZero() public {
-            assert(exampleContract.doStuff() == 0);
-        }
+        hiddenValue = data;
+        return alwaysZero;
     }
+}
+```
 
-In foundry:
-    fuzz test: random data to one function(stateless)
-    invariant test = random data and random function calls to   
-                    many functions(stateful)
+## Test Function
+```solidity
+// Test function
+function testIsAlwaysZeroFuzz(uint data) {
+    assert(exampleContract.doStuff() == 0);
+}
+```
 
-Real Examples: 
-    - new token minted < inflation rate
-    - only possible to have 1 winner
-    - only withdraw what they deposit
+## Run Test
+```bash
+# Run test using Forge
+# forge test -m testIsAlwaysZeroFuzz
+# It will give an error at data = 2
+```
+
+## Configuring Fuzz Runs
+We can change the number of runs a fuzz function does by adding the following code in `foundry.toml`:
+```toml
+[fuzz]
+runs = 1000
+```
+
+Above test is a stateless fuzz run, i.e., where the state of the previous test is discarded for every run.
+
+## Stateful Fuzzing
+Fuzzing where the final state of your previous run is the starting state of your next run.
+
+## Example Stateful Fuzzing Contract
+```solidity
+import { Stdinvariant } from "forge-std/Stdinvariant.sol";
+
+contract Test is Stdinvariant {
+    MyContract exampleContract = new MyContract();
+    targetContract(address(exampleContract));
+
+    function invariantTestAlwaysReturnsZero() public {
+        assert(exampleContract.doStuff() == 0);
+    }
+}
+```
+
+## In Foundry
+- Fuzz Test: Random data to one function (stateless).
+- Invariant Test: Random data and random function calls to many functions (stateful).
+
+## Real Examples
+- New token minted should be less than the inflation rate.
+- Only possible to have one winner.
+- Only withdraw what they deposit.
+```
+
