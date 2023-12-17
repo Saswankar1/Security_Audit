@@ -1,6 +1,6 @@
 Certainly! Here's the content formatted for a README file:
 
-```markdown
+
 # Fuzz Testing and Invariants
 
 ## Fuzz Testing
