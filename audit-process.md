@@ -1,33 +1,34 @@
 # Smart Contract Audit Process
 
 ## 1. The Audit Process
-      a. Scoping (determine the duration and pricing)
-      b. Reconnaissance (initial code walkthrough, use tools)
-      c. Vulnerability Identification (identify vulnerabilities)
-      d. Reporting (create a report on improving protocol security)
+   a. **Scoping:** Determine the duration and pricing for the audit.
+   b. **Reconnaissance:** Conduct an initial code walkthrough and use relevant tools.
+   c. **Vulnerability Identification:** Identify and document vulnerabilities in the code.
+   d. **Reporting:** Create a comprehensive report outlining ways to enhance protocol security.
 
 ## 2. Protocol Fixes
-      a. Fix issues
-      b. Retest and add tests
+   a. **Fix Issues:** Implement solutions to address identified vulnerabilities.
+   b. **Retest and Add Tests:** Ensure that fixes are effective and comprehensive by retesting and adding new tests.
 
 ## 3. Mitigation Review
-   - Recheck the code for any new bugs
+   - Recheck the code to identify and address any new potential security risks.
 
 ## Two Tests Before Starting a Smart Contract Audit
 
 ### 1. The Rekt Test Questions
-- Do you have all actors, roles, and privileges documented?
-- Do you keep documentation of all external services, contracts, and oracles you rely on?
-- Do you have a written and tested incident response plan?
-- Do you document the best ways to attack your system?
-- Do you perform identity verification and background checks on all employees?
-- Do you have a team member with security defined in their role?
-- Do you require hardware security keys for production systems?
-- Does your key management system require multiple humans and physical steps?
-- Do you define key invariants for your system and test them on every commit?
-- Do you use the best automated tools to discover security issues in your code?
-- Do you undergo external audits and maintain a vulnerability disclosure or bug bounty program?
-- Have you considered and mitigated avenues for abusing users of your system?
+- Ensure thorough documentation of actors, roles, and privileges.
+- Document all external services, contracts, and oracles relied upon.
+- Establish and test an incident response plan.
+- Document potential attack vectors on the system.
+- Perform identity verification and background checks on all employees.
+- Assign a team member with a dedicated security role.
+- Enforce the use of hardware security keys for production systems.
+- Implement a key management system with multiple human and physical steps.
+- Define key invariants for the system and test them with every commit.
+- Utilize the best automated tools to identify security issues in the code.
+- Undergo external audits and maintain a vulnerability disclosure or bug bounty program.
+- Consider and mitigate potential avenues for abusing users of the system.
 
 ### 2. Simple Security Toolkit
 [Simple Security Toolkit](https://github.com/nascentxyz/simple-security-toolkit)
+
