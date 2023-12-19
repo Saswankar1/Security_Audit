@@ -14,6 +14,7 @@ _Created By: Saswankar_
    2) [What is Smart Contract Auditing?](smart_contract_auditing.md)
    3) [Tools for Security Audits](tools_for_audit.md)
    4) [Fuzzing in foundry](fuzzing.md)
+   5) [Audit Process](audit-process.md)
 
      
 
