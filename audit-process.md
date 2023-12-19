@@ -1,14 +1,14 @@
 # Smart Contract Audit Process
 
 ## 1. The Audit Process
-   a. Scoping (determine the duration and pricing)
-   b. Reconnaissance (initial code walkthrough, use tools)
-   c. Vulnerability Identification (identify vulnerabilities)
-   d. Reporting (create a report on improving protocol security)
+      a. Scoping (determine the duration and pricing)
+      b. Reconnaissance (initial code walkthrough, use tools)
+      c. Vulnerability Identification (identify vulnerabilities)
+      d. Reporting (create a report on improving protocol security)
 
 ## 2. Protocol Fixes
-   a. Fix issues
-   b. Retest and add tests
+      a. Fix issues
+      b. Retest and add tests
 
 ## 3. Mitigation Review
    - Recheck the code for any new bugs
