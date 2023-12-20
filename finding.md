@@ -17,8 +17,8 @@
 ## writing the Title: 
    - the title should include of the root cause and impact it will have in the code
    - Example:
-      TITLE1: [S-#] Root(Varaibles stored in storage on-chain are visible to anyone, no matter the solidity visibility keyword) impact(meaning the password is not actually a private password)
-      TITLE2: Storing the password on-chain makes it visible to anyone, and no longer private.
+      1) TITLE1: [S-#] Root(Varaibles stored in storage on-chain are visible to anyone, no matter the solidity visibility keyword) impact(meaning the password is not actually a private password)
+      2) TITLE2: Storing the password on-chain makes it visible to anyone, and no longer private.
 
 ## writing the Description:
   - here we need to teach the protocol why this is an issue
