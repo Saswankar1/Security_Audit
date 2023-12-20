@@ -91,3 +91,4 @@ This checklist ensures a comprehensive approach to preparing for a security audi
   2) use cloc to get all contract line then get it into spreadsheet start from the contract with shortest line of code
   3) USE notes to have notes or ideas
   4) while checking the code we can use comments to write that we visited the code
+  5) We can also use soldity metrics extension(we can check the external and public funct as they are more likey used by hackers to attack)
