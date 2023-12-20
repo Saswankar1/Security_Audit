@@ -8,7 +8,7 @@ Before initiating a security review, it's essential to assess the readiness of t
 
 ### b) Find the Stats
 - Evaluate project statistics:
-  - Line of Code.
+  - Line of Code.(sudo npm install -g cloc / cloc ./src/)
   - Project complexity (complexity score).
   - Estimated time needed for the audit (important for private audits).
 
@@ -76,7 +76,6 @@ Before initiating a security review, it's essential to assess the readiness of t
      Quickstart
      git clone https://github.com/Cyfrin/3-passwordstore-audit
      cd 3-passwordstore-audit
-     forge build
      ```
 2. Switch to the commit hash mentioned in the readme.
    - Commands:
@@ -86,3 +85,9 @@ Before initiating a security review, it's essential to assess the readiness of t
      ```
 
 This checklist ensures a comprehensive approach to preparing for a security audit, fostering a more secure protocol.
+----------------------------------------------------------------------------------------------------------------------------------------
+###Used by one of the leading dev just some basic tip:
+  1) get all the code into the dev environtment
+  2) use cloc to get all contract line then get it into spreadsheet start from the contract with shortest line of code
+  3) USE notes to have notes or ideas
+  4) while checking the code we can use comments to write that we visited the code
