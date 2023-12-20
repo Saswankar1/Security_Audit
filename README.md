@@ -8,6 +8,7 @@ _Created By: Saswankar_
    4) [Fuzzing in foundry](fuzzing.md)
    5) [Audit Process](audit-process.md)
    6) [Scoping](scoping.md)
+   7) [How to write the finding report?](finding.md)
 
 
      
