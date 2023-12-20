@@ -86,7 +86,7 @@ Before initiating a security review, it's essential to assess the readiness of t
 
 This checklist ensures a comprehensive approach to preparing for a security audit, fostering a more secure protocol.
 ----------------------------------------------------------------------------------------------------------------------------------------
-###Used by one of the leading dev just some basic tip:
+### Used by one of the leading dev just some basic tip:
   1) get all the code into the dev environtment
   2) use cloc to get all contract line then get it into spreadsheet start from the contract with shortest line of code
   3) USE notes to have notes or ideas
