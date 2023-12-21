@@ -11,6 +11,7 @@ _Created By: Saswankar_
    7) [How to write the finding in a report?](finding.md)
    8) [Severity Rating](https://docs.codehawks.com/hawks-auditors/how-to-evaluate-a-finding-severity)
    9) [Generating a PDF report](https://github.com/Cyfrin/audit-report-templating)
+   10) [Generating a PDF report-Video](https://updraft.cyfrin.io/courses/security/first-audit/making-a-pdf?lesson_format=video)
  
 
      
