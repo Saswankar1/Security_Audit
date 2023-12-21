@@ -77,11 +77,13 @@ We show such method of reading any data off-chain below. "
 ##Recommended Mitigation
  - here we tell the protocol the solution mainly in test or sometimes just include the solution in code form too.
 <Example>
-    
-      "" Due to this, the overall architecture of the contract should be rethought. One could encrypt the
+
+```txt
+         Due to this, the overall architecture of the contract should be rethought. One could encrypt the
          password off-chain, and then store the encrypted password on-chain. This would require the user to remember another password
          off-chain to decrypt the password. However, you'd also likely want to remove the view function as you wouldn't want the user
-         to accidentally send a transaction with the password that decrypts your password. """
+         to accidentally send a transaction with the password that decrypts your password.
+```
 
 </Example>
             
