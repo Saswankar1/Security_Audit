@@ -9,7 +9,8 @@ _Created By: Saswankar_
    5) [Audit Process](audit-process.md)
    6) [Scoping](scoping.md)
    7) [How to write the finding in a report?](finding.md)
-
+   8) [Severity Rating](severity.md)
+ 
 
      
 
