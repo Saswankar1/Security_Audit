@@ -14,9 +14,9 @@ _Created By: Saswankar_
    10) [Generating a PDF report-Video](https://updraft.cyfrin.io/courses/security/first-audit/making-a-pdf?lesson_format=video)
    11) [Static Analysis-Slither](https://github.com/crytic/slither)
    12) Some Common Bugs:
-         a) [Bugs-Example_cyfrin](https://github.com/Cyfrin/sc-exploits-minimized)
-         b) [Bugs-Example_Sas](bugs.md)
- 
+         - [Bugs-Example_cyfrin](https://github.com/Cyfrin/sc-exploits-minimized)
+         - [Bugs-Example_Sas](bugs.md)
+       
 
      
 
