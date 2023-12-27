@@ -12,11 +12,13 @@ _Created By: Saswankar_
    8) [Severity Rating](https://docs.codehawks.com/hawks-auditors/how-to-evaluate-a-finding-severity)
    9) [Generating a PDF report](https://github.com/Cyfrin/audit-report-templating)
    10) [Generating a PDF report-Video](https://updraft.cyfrin.io/courses/security/first-audit/making-a-pdf?lesson_format=video)
-   11) [Static Analysis-Slither](https://github.com/crytic/slither)
+   11) Slither:
+         - [Slither-Docs](https://github.com/crytic/slither)
+         - [Slither](slither.md)
    12) Some Common Bugs:
          - [Bugs-Example_cyfrin](https://github.com/Cyfrin/sc-exploits-minimized)
          - [Bugs-Example_Sas](bugs.md)
-   13) [Slither](slither.md)
+   13) 
    
 
      
