@@ -17,7 +17,7 @@ _Created By: Saswankar_
          - [Slither](slither.md)
    12) Some Common Bugs:
          - [Bugs-Example_cyfrin](https://github.com/Cyfrin/sc-exploits-minimized)
-         - [Bugs-Example_Sas](bugs.md)
+         - [Bugs-Example](bugs.md)
 
 
      
